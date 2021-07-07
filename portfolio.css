@@ -4,7 +4,7 @@ body {
 
 #page-intro {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background-color: #293B5F;
 }
 
@@ -48,6 +48,7 @@ body {
 
 
 #about-section {
+    padding-top: 50px;
     min-height: 70vh;
 }
 
@@ -73,7 +74,82 @@ body {
 }
 
 
+#portfolio-section {
+    padding-top: 50px;
+    height: 1000px;
+}
+
+
+.card {
+    border: none;
+}
+
+.card-img-top {
+    height: 250px;
+}
+
 .row {
     width: 1200px;
     margin: 40px auto;
+}
+
+
+#contact-section {
+    max-width: 100%;
+    margin: 300px auto;
+    color: white;
+}
+
+.new-form {
+    width: 50%;
+    margin: 40px auto;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input-name {
+    align-items: left;
+    max-width: 100%;
+    min-width: 48%;
+    margin-right: 10px;
+}
+
+.input-email {
+    align-items: right;
+    max-width: 100%;
+    min-width: 48%;
+}
+
+.email-input {
+    width: 100%;
+}
+
+.name-input {
+    width: 100%;
+}
+
+.message-input {
+    width: 100%;
+}
+
+.text-area {
+    width: 100%;
+    height: 200px;
+}
+
+.button {
+    display: flex;
+    justify-content: right;
+}
+
+.submit-button {
+    background-color: #B2AB8C;
+    border: none;
+    height: 40px;
+    width: 50px;
+    border-radius: 5px;
 }

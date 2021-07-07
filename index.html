@@ -10,16 +10,16 @@
 </head>
 <body>
     <header id="page-intro">
-        <nav class="nav-bar">
+        <nav class="nav-bar fixed-top">
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-1"  aria-current="page" href="#">About</a>
+                    <a class="nav-1"  aria-current="page" href="#about-section">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-1" href="#">Portfolio</a>
+                    <a class="nav-1" href="#portfolio-section">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-1" href="#">Contact</a>
+                    <a class="nav-1" href="#contact-section">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -38,28 +38,34 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">CSS Creature</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="https://codepen.io/Joe_Rinehart/pen/PopKWXr" target="_blank">
+                  <img src="images/CSS-Creature.PNG" class="card-img-top" alt="CSS Creature">
+                </a>
+                  <div class="card-body">
+                    <h5 class="card-title">CSS Creature</h5>
+                    <p class="card-text">Just a silly creature I made for my first assignment involving HTML and CSS. </p>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+                <a href="https://joe-rinehart.github.io/Static-Layout/" target="_blank">
+                <img src="images/Static-Layout.PNG" class="card-img-top" alt="Static Layout">
+                </a>
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h5 class="card-title">Static Layout</h5>
+                  <p class="card-text">2nd assignment using HTML and CSS where we were tasked with recreating an already existing website. I chose KAST app.</p>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+                <a href="https://joe-rinehart.github.io/NASA-API/" target="_blank">
+                <img src="images/NASA.PNG" class="card-img-top" alt="NASA API">
+                </a>
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                  <h5 class="card-title">NASA API</h5>
+                  <p class="card-text">A site that grabs a random photo of the day from NASA and displays it along with information about the image.</p>
                 </div>
               </div>
             </div>
@@ -91,6 +97,31 @@
               </div>
             </div>
           </div>
+    </div>
+    <div id="contact-section">
+      <h1 class="section-title">Contact</h1>
+      <form class="new-form" action="https://formspree.io/f/xdoydvgj" method="POST">
+        <div class="form-row">
+          <label class="input-name"> Name:
+            <br>
+            <input class="name-input" type="name" name="_name">
+          </label>
+          <label class="input-email"> Email:
+            <br>
+            <input class="email-input" type="email" name="_replyto">
+          </label>
+        </div>
+        <label class="message-input"> Message:
+          <br>
+          <textarea class="text-area" name="message"></textarea>
+        </label>
+
+        <!-- your other form fields go here -->
+        <div class="button">
+          <button class="submit-button" type="submit">Send
+          </button>
+        </div>
+      </form>
     </div>
 </body>
 </html>
